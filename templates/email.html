@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Confirmación de usuario</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body style="font: 16px verdana;">
+    <div class="mb-3">
+        <table class="table table-bordered">
+            <tr>
+                <td width="10%"><img style="display: block; margin: 0 auto; max-width: 100%;"
+                        src="{{ url_for('static', filename='logos_company/1698463769603.png') }}" />
+                </td>
+            </tr>
+            <tr>
+                <td><hr style=" height: 1px; color: #D3D3D3; background-color:#D3D3D3; border: none;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="font: 16px verdana;">
+                        Hola <strong>{{ username }}</strong>
+                    </p>
+                    <p style="font: 16px verdana;">
+                        <strong>¡Estás a un solo paso de activar tu cuenta en nuestra  plataforma de Bitlifent!</strong>
+                    </p>
+                    <p style="font: 16px verdana;">
+                        Necesitas activar tu cuenta para empezar a disfrutar de la plataforma:
+                    </p>
+                    <p style="  text-align:center;font: 16px verdana;"><br />
+                        Usuario: <strong> {{ email }} </strong>
+                    </p>
+                    <p style="text-align:center">
+                        <a href="http://127.0.0.1:5000/verification_email/{{ token_validation }}" style=" border-radius:28px;
+                                        background: #26B99A;
+                                        border: 1px solid #169F85;
+                                        display:inline-block;
+                                        cursor:pointer;
+                                        color:#fff;
+                                        font: 17px verdana;
+                                        padding:16px 31px;
+                                        text-decoration:none;
+                                        text-shadow:0px 1px 0px #2f6627;
+                                        ">
+                            ¡Activa tu cuenta ahora!
+                        </a>
+                    <p>
+                    <p style="font-family:verdana;">
+                        <br />
+                        En caso de que el botón no funcione, simplemente copia y pega
+                        el siguiente enlace en tu navegador.
+                    </p>
+                    <p style="font: 16px verdana;">
+                        <a href="http://127.0.0.1:5000/verification_email/{{ token_validation }}">
+                            <small>
+                                http://127.0.0.1:5000/verification_email/{{ token_validation }}
+                            </small>
+                        </a>
+                    </p>
+                    <p style="font: 16px verdana;">
+                        <br />
+                        Con tu cuenta en nuestra plataforma:
+                    </p>
+                    <p>
+                    <ul>
+                        <li>Tendrás acceso a la plataforma .</li>
+                        <li>jugar un juego xd</li>
+                        <li>vidaaa</li>
+                    </ul>
+                    </p>
+                    <p style="font: 16px verdana;">
+                        <strong>¿Tienes dudas? ¿preguntas?</strong><br><br>
+                        Escríbenos a <a href="mailto:jorfar03@gmail.com">jorfar03@gmail.com</a>,
+                        estaremos encantados de ayudarte.<br><br>
+                        ¡Gracias por tu registro!<br>
+                        <hr style=" height: 1px; color: #D3D3D3; background-color:#D3D3D3; border: none;">
+                    </p>
+                    <br>
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
